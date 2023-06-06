@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  height: 100dvh;
+}
+
+body,
+main,
+#creator,
+#current,
+#value,
+#time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: hsl(216, 50%, 16%);
+  flex-direction: column;
+  width: 270px;
+  height: 440px;
+  border-radius: 10px;
+  font-size: 14px;
+  justify-content: space-around;
+  padding-top: 2px;
+}
+
+.image {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.overlay {
+  transform: translate(0%, -100%);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 255, 247, 0.5);
+  /* background-color: hsl(178, 100%, 50%); */
+  border-radius: 10px;
+  display: none;
+}
+
+.image:hover .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 24px;
+  width: 250px;
+}
+
+h1:hover,
+h4:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+img {
+  border-radius: 10px;
+}
+
+p,
+main > div {
+  width: 250px;
+}
+
+#current {
+  justify-content: space-between;
+}
+
+span > svg {
+  margin-right: 3px;
+}
+
+#value {
+  color: hsl(178, 100%, 50%);
+}
+
+p,
+#time,
+#creator {
+  color: hsl(215, 51%, 70%);
+}
+
+#creator {
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 10px 0;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+#creator > img {
+  border: 1px solid white;
+  margin-right: 5px;
+}
+
+h4 {
+  color: hsl(0, 0%, 100%);
+}
